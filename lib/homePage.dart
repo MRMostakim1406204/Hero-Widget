@@ -19,16 +19,14 @@ class _HomePageState extends State<HomePage> {
       body: Center(
         child: CircleAvatar(
           radius: 60,
-          child: Center(
-            child: Hero(tag: "add",
-             child: IconButton(onPressed: (){
-              Navigator.push(context, MaterialPageRoute(builder: (context)=>SecondPage()));
-             },
-             alignment: Alignment.center,
-             iconSize: 50,
-              icon: Icon(Icons.add_a_photo,))
-             ),
-          ),
+          child: Hero(tag: "add",
+           child: IconButton(onPressed: (){
+            Navigator.push(context, MaterialPageRoute(builder: (context)=>SecondPage()));
+           },
+           alignment: Alignment.center,
+           iconSize: 50,
+            icon: Icon(Icons.add_a_photo,))
+           ),
         ),
          
       ),

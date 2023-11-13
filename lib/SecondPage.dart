@@ -12,12 +12,15 @@ class _SecondPageState extends State<SecondPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       body: Center(
-        child: Container(
-          color: Colors.pink,
-          child: Hero(tag: "add",
-           child: Icon(Icons.add_a_photo,size: 100,),
-          ),
-          ),
+        child: CircleAvatar(
+          radius: 50,
+          child: Container(
+           // color: Colors.pink,
+            child: Hero(tag: "message",
+             child: Icon(Icons.message,size: 40,color: Colors.black,),
+            ),
+            ),
+        ),
       ),
     );
   }
